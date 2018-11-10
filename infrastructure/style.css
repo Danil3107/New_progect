@@ -1,0 +1,188 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*----------------------------------------------------------------------------*/
+
+body{
+    background: #d1d1d1;
+    font-family:sans-serif;
+}
+
+.menu{
+    background-color: #939393;
+    margin-top: -3px;
+    width: 100%;
+}
+
+ul.menu-ul{
+    display: flex;
+    padding: 0;
+    justify-content: center;
+}
+
+li.menu-li{
+    list-style: none;
+    padding: 10px;
+}
+
+li.menu-li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffff;
+    position: relative;
+    padding: 5px;
+}
+li.menu-li a i {
+    margin-right:   10px;
+    margin-left: 10px;
+}
+
+li.menu-li a::before{
+    content: '';
+    width: 0;
+    height:3px;
+    background-color: #ffcc20;
+    position: absolute;
+    top:100%;
+    left: 0;
+    transition: 1s;
+}
+
+li.menu-li a::after{
+    content: '';
+    width: 0;
+    height:3px;
+    background-color: #ff9e04;
+    position: absolute;
+    top:100%;
+    right: 0;
+    transition: 1s;
+    
+}
+
+li.menu-li:hover{
+    background-color: #343434;
+}
+
+li.menu-li:hover a::before{
+    width: 50%;
+    transform:translate(100%);
+}
+li.menu-li:hover a::after{
+    width: 50%;
+    transform:translate(-100%);
+}
+
+nav{
+    
+}
+.wan{
+    margin: 30px 0 0 15% ;
+    font-family: italic;
+    font-size: 20px;
+    transform: skew(-20deg)
+}
+.geography{
+    border: 1px solid #fff500;
+    background: #dddddd;
+    margin:30px 28% 0 5%;
+    padding: 15px;
+    font-size: 18px;
+}
+
+.two{
+    margin-top: 80px;
+    float: right;
+    margin-right: 30%;
+    font-family: italic;
+    font-size: 20px;
+    transform: skew(-20deg)
+}
+
+.three {
+    list-style-type: lower-latin;
+    margin-left: 20px;
+    width: 200px;    
+    float: left;
+}
+
+.four{
+    list-style-type: decimal;
+    margin-left: 40px;
+    width: 200px;    
+    float: left;
+}
+
+.administrative{
+    border: 1px solid #fff500;
+    background: #dddddd;
+    padding: 15px;
+    float: right;
+    margin-top: 40px;
+    margin-right:15%;
+    
+}
+
+#wan{
+    float: left;
+}
+
+
+.five{
+        list-style-type: decimal;
+        margin-top:24px;
+        margin-bottom: 40px;
+        float: right;
+}
+
+.maps{
+    margin-top: 90px;
+    margin-left: 25%;
+    margin-right: 30%;
+    margin-bottom: 70px;
+}

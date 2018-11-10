@@ -1,0 +1,162 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*-------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Pacifico&subset=cyrillic,latin-ext');
+
+body{
+    background: #191919;
+    font-family:sans-serif;
+}
+
+.menu{
+    background-color: #939393;
+    margin-top: -3px;
+    width: 100%;
+}
+
+ul.menu-ul{
+    display: flex;
+    padding: 0;
+    justify-content: center;
+}
+
+li.menu-li{
+    list-style: none;
+    padding: 10px;
+}
+
+li.menu-li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #e0e0e0;
+    position: relative;
+    padding: 5px;
+}
+li.menu-li a i {
+    margin-right:   10px;
+    margin-left: 10px;
+}
+
+li.menu-li a::before{
+    content: '';
+    width: 0;
+    height:3px;
+    background-color: #0042f5;
+    position: absolute;
+    top:100%;
+    left: 0;
+    transition: 1s;
+}
+
+li.menu-li a::after{
+    content: '';
+    width: 0;
+    height:3px;
+    background-color: #f20000;
+    position: absolute;
+    top:100%;
+    right: 0;
+    transition: 1s;
+    
+}
+
+li.menu-li:hover{
+    background-color: #343434;
+}
+
+li.menu-li:hover a::before{
+    width: 50%;
+    transform:translate(100%);
+}
+li.menu-li:hover a::after{
+    width: 50%;
+    transform:translate(-100%);
+}
+  
+
+                /*Текст*/
+.align{
+    float: left;
+
+}
+
+.wan{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 20px;
+    font-family: italic;
+    color:#fff;
+    transform: skew(-20deg);
+}
+
+#wan{
+    width: 200px;    
+    float: left;
+    
+}
+.two{
+    padding: 5px;
+    margin: 0 40px 15px 0;
+    transform: translateY(30px); 
+    transform: rotateX(50%);
+    color: #bebebe;
+    border: 1px solid rgba(175, 175, 175, 0.1);
+    width:350px;
+    height: 470px;
+}
+.three{
+    font-family: monospace;
+    font-size: 18px;
+    color: #ffffff;
+    position: relative;
+    text-align: center;
+    margin-bottom: 3px;  
+    transform: skew(-10deg);
+}
+
+nav{
+    margin-left: 19%;
+    margin-right: 10%;
+}
